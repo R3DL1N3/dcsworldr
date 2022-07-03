@@ -13,6 +13,7 @@ Existing directory path
 Fails if the OpenBeta Server product has not been installed.
 }
 \examples{
+\dontrun{
 library(dcsworldr)
 
 # List all files with extension `.miz` found recursively under the OpenBeta
@@ -27,4 +28,5 @@ basename(file.miz) \%>\%
   duplicated() \%>\%
   any()
 #> [1] FALSE
+}
 }

@@ -33,7 +33,7 @@ eagle_dynamics.path <- function(...) {
 #' @export
 #'
 #' @examples
-#' stopifnot("windows" %in% tolower(Sys.info()[["sysname"]]))
+#' \dontrun{
 #' library(dcsworldr)
 #'
 #' # List all files with extension `.miz` found recursively under the OpenBeta
@@ -48,6 +48,7 @@ eagle_dynamics.path <- function(...) {
 #'   duplicated() %>%
 #'   any()
 #' #> [1] FALSE
+#' }
 openbeta_server.path <- function() {
   file.path(eagle_dynamics.path(), "DCS World OpenBeta Server") %>%
     stopifnot.dir.exists()
