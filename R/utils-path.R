@@ -33,6 +33,7 @@ eagle_dynamics.path <- function(...) {
 #' @export
 #'
 #' @examples
+#' stopifnot("windows" %in% tolower(Sys.info()[["sysname"]]))
 #' library(dcsworldr)
 #'
 #' # List all files with extension `.miz` found recursively under the OpenBeta
