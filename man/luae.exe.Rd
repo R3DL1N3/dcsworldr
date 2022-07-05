@@ -44,9 +44,9 @@ luae.exe(...)
 Executes DCS World's \code{luae.exe} Lua 5.1.5 interpreter.
 }
 \details{
-You do not need to shell-quote standard input, as you might expect. However,
-you \emph{do} need to quote for Lua snippets passing through the command line
-arguments. See examples.
+You do not need to shell-quote standard input, as you might expect.
+However, you \emph{do} need to quote for Lua snippets passing through the
+command line arguments. See examples.
 }
 \examples{
 \dontrun{
