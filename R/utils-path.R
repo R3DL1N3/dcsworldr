@@ -1,10 +1,11 @@
 #' Path of Program Files on Windows
+#' @inheritDotParams base::file.path
 #' @return Existing directory path
 #' @export
-program_files.path <- function() {
+program_files.path <- function(...) {
   path <- Sys.getenv("PROGRAMFILES", unset = NA)
   stopifnot(!is.na(path))
-  path
+  file.path(path, ...)
 }
 
 #' Path of Eagle Dynamics
@@ -16,19 +17,19 @@ program_files.path <- function() {
 #' \emph{prior} to checking for directory existence. Hence any sub-path must
 #' address a directory and not a file.
 #'
-#' @inheritDotParams base::file.path
+#' @inheritDotParams program_files.path
 #' @return Existing directory path; fails if Eagle Dynamics with Program Files
 #'   does not exist
 #' @export
 eagle_dynamics.path <- function(...) {
-  file.path(program_files.path(), "Eagle Dynamics", ...) %>%
-    stopifnot.dir.exists()
+  program_files.path("Eagle Dynamics", ...)
 }
 
 #' Path of OpenBeta Server
 #'
 #' Fails if the OpenBeta Server product has not been installed.
 #'
+#' @inheritDotParams eagle_dynamics.path
 #' @return Existing directory path
 #' @export
 #'
@@ -49,7 +50,6 @@ eagle_dynamics.path <- function(...) {
 #'   any()
 #' #> [1] FALSE
 #' }
-openbeta_server.path <- function() {
-  file.path(eagle_dynamics.path(), "DCS World OpenBeta Server") %>%
-    stopifnot.dir.exists()
+openbeta_server.path <- function(...) {
+  eagle_dynamics.path("DCS World OpenBeta Server", ...)
 }
