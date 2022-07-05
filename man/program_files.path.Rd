@@ -4,7 +4,14 @@
 \alias{program_files.path}
 \title{Path of Program Files on Windows}
 \usage{
-program_files.path()
+program_files.path(...)
+}
+\arguments{
+\item{...}{
+  Arguments passed on to \code{\link[base:file.path]{base::file.path}}
+  \describe{
+    \item{\code{fsep}}{the path separator to use (assumed to be ASCII).}
+  }}
 }
 \value{
 Existing directory path
