@@ -16,6 +16,8 @@ Logical \code{TRUE} if modules includes dedicated server
 Auto-Update Configuration for Dedicated Server
 }
 \examples{
+\dontrun{
 dcsworldr::cfg.is_dedicated_server()
 #> [1] TRUE
+}
 }
