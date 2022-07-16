@@ -28,10 +28,10 @@ library(dcsworldr)
 # Name the vector of paths by the base name.
 file.miz <- openbeta_server.path() \%>\%
   list.files(pattern = "\\\\.miz$", full.names = TRUE, recursive = TRUE)
-names(file.miz) <- basename(file.miz)
+names(file.miz) <- basename(tools::file_path_sans_ext(file.miz))
 
 # Are any duplicated by base name? Not at the time of writing.
-basename(file.miz) \%>\%
+names(file.miz) \%>\%
   duplicated() \%>\%
   any()
 #> [1] FALSE
