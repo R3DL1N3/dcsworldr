@@ -15,3 +15,7 @@ Logical \code{TRUE} if modules includes dedicated server
 \description{
 Auto-Update Configuration for Dedicated Server
 }
+\examples{
+dcsworldr::cfg.is_dedicated_server()
+#> [1] TRUE
+}

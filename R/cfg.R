@@ -25,6 +25,9 @@ autoupdate.cfg <- function(path = openbeta_server.path()) {
 #' @param cfg List of auto-update configuration pairs
 #' @return Logical \code{TRUE} if modules includes dedicated server
 #' @export
+#' @examples
+#' dcsworldr::cfg.is_dedicated_server()
+#' #> [1] TRUE
 cfg.is_dedicated_server <- function(cfg = autoupdate.cfg()) {
   cfg$modules %in% "DEDICATED_SERVER"
 }
