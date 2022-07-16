@@ -16,7 +16,16 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/autoupdate.cfg.html</loc>
+  </url>
+  <url>
+    <loc>/reference/cfg.is_dedicated_server.html</loc>
+  </url>
+  <url>
     <loc>/reference/dcsworldr-package.html</loc>
+  </url>
+  <url>
+    <loc>/reference/dedicated_server.is_installed.html</loc>
   </url>
   <url>
     <loc>/reference/eagle_dynamics.path.html</loc>
