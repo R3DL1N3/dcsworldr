@@ -2,6 +2,7 @@
 
 export("%>%")
 export(eagle_dynamics.path)
+export(luae.exe)
 export(openbeta_server.path)
 export(program_files.path)
 importFrom(magrittr,"%>%")

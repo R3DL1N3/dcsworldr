@@ -8,9 +8,9 @@ eagle_dynamics.path(...)
 }
 \arguments{
 \item{...}{
-  Arguments passed on to \code{\link[base:file.path]{base::file.path}}
+  Arguments passed on to \code{\link[=program_files.path]{program_files.path}}
   \describe{
-    \item{\code{fsep}}{the path separator to use (assumed to be ASCII).}
+    \item{\code{}}{}
   }}
 }
 \value{

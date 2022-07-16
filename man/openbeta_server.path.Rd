@@ -4,7 +4,14 @@
 \alias{openbeta_server.path}
 \title{Path of OpenBeta Server}
 \usage{
-openbeta_server.path()
+openbeta_server.path(...)
+}
+\arguments{
+\item{...}{
+  Arguments passed on to \code{\link[=eagle_dynamics.path]{eagle_dynamics.path}}
+  \describe{
+    \item{\code{}}{}
+  }}
 }
 \value{
 Existing directory path
